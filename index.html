@@ -95,21 +95,102 @@
             </div>
         </div>
     </div>
+
+    <div id="reservationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <legend class="col-form-label col-sm-3 pt-0">Number of Guests</legend>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests_number" id="option1"
+                                    value="option1">
+                                <label class="form-check-label" for="option1">1</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests_number" id="option2"
+                                    value="option2">
+                                <label class="form-check-label" for="option2">2</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests_number" id="option3"
+                                    value="option3">
+                                <label class="form-check-label" for="option3">3</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests_number" id="option4"
+                                    value="option4">
+                                <label class="form-check-label" for="option4">4</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests_number" id="option5"
+                                    value="option5">
+                                <label class="form-check-label" for="option5">5</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="guests_number" id="option6"
+                                    value="option6">
+                                <label class="form-check-label" for="option6">6</label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <legend class="col-form-label col-sm-3 pt-0">Section</legend>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active" for="non_smoking">
+                                    <input type="radio" name="options" id="non_smoking" autocomplete="off"
+                                        checked>Non-Smoking
+                                </label>
+                                <label class="btn btn-danger" for="smoking">
+                                    <input type="radio" name="options" id="smoking" autocomplete="off">Smoking
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <legend class="col-form-label col-sm-3 pt-0">Date and Time</legend>
+                            <div class="form-group row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="date" id="date" placeholder="Date">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="time" id="time" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-3">
+                                <button type="button" class="btn btn-secondary btn-md"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-md">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
-                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our
+                    <p>We take inspiration from the World's best cuisines, and create a unique fusion experience.
+                        Our
                         lipsmacking creations will tickle your culinary senses!</p>
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
                     <img src="img/logo.png" class="img-fluid" />
                 </div>
                 <div class="col-12 col-sm-3 align-self-center">
-                    <a role="button" class="btn btn-warning btn-sm btn-block" data-toggle="tooltip" data-html="true"
-                        title="Or call us at <br><strong>+852 12345678</strong>" data-placement="bottom"
-                        href="#reservation_form">Reserve
+                    <a role="button" class="btn btn-warning btn-md text-dark btn-block" data-toggle="modal"
+                        data-target="#reservationModal">Reserve
                         Table</a>
                 </div>
             </div>
@@ -133,7 +214,8 @@
                                     pizza,
                                     topped
                                     with Cerignola olives,
-                                    ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                                    ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.
+                                </p>
                             </div>
                         </div>
                         <div class="carousel-item">
@@ -142,10 +224,12 @@
                                 <h2>Weekend Grand Buffet
                                     <span class="badge badge-danger">NEW</span>
                                 </h2>
-                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
+                                <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of
+                                    five
                                     different
                                     salads, six enticing appetizers,
-                                    six main entrees and five choicest desserts. Free flowing bubbly and soft drinks.
+                                    six main entrees and five choicest desserts. Free flowing bubbly and soft
+                                    drinks.
                                     All
                                     for
                                     just
@@ -205,7 +289,6 @@
             </div>
         </div>
 
-
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3">
                 <h3>This Month's Promotions</h3>
@@ -219,7 +302,8 @@
                         <p class="d-none d-sm-block">Featuring mouthwatering combinations with a choice of five
                             different
                             salads, six enticing appetizers,
-                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for
+                            six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All
+                            for
                             just
                             $19.99 per person </p>
                     </div>
@@ -241,80 +325,12 @@
                         <p class="d-none d-sm-block">Award winning three-star Michelin chef with wide International
                             experience
                             having worked closely with
-                            whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion
+                            whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian
+                            fusion
                             experiences. </p>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="row row-content justify-content-center" id="reservation_form">
-            <div class="col-12 col-sm-8">
-                <div class="card">
-                    <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                    <div class="card-body">
-                        <form>
-                            <div class="form-group row">
-                                <legend class="col-form-label col-sm-3 pt-0">Number of Guests</legend>
-                                <div class="col-sm-9">
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guests_number" id="option1"
-                                            value="option1">
-                                        <label class="form-check-label" for="option1">1</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guests_number" id="option2"
-                                            value="option2">
-                                        <label class="form-check-label" for="option2">2</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guests_number" id="option3"
-                                            value="option3">
-                                        <label class="form-check-label" for="option3">3</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guests_number" id="option4"
-                                            value="option4">
-                                        <label class="form-check-label" for="option4">4</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guests_number" id="option5"
-                                            value="option5">
-                                        <label class="form-check-label" for="option5">5</label>
-                                    </div>
-                                    <div class="form-check form-check-inline">
-                                        <input class="form-check-input" type="radio" name="guests_number" id="option6"
-                                            value="option6">
-                                        <label class="form-check-label" for="option6">6</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <legend class="col-form-label col-sm-3 pt-0">Date and Time</legend>
-                                <div class="col-sm-9">
-                                    <div class="form-group row">
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="date" id="date"
-                                                placeholder="Date">
-                                        </div>
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="time" id="time"
-                                                placeholder="Time">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="offset-md-3 col-md-10">
-                                    <button type="submit" class="btn btn-primary">
-                                        Reserve
-                                    </button>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </div>
-            </form>
         </div>
     </div>
 
@@ -376,11 +392,6 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 </body>
 
 </html>
